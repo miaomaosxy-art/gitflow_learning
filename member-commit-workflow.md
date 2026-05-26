@@ -43,7 +43,7 @@ CI 通过
 切换 develop：
 
 ```bash
-git checkout develop
+git switch develop
 ```
 
 拉取最新代码：
@@ -65,7 +65,7 @@ feature/功能名
 例如：
 
 ```bash
-git checkout -b feature/login
+git switch -c feature/login
 ```
 
 ---
@@ -83,9 +83,9 @@ git checkout -b feature/login
 ## Step 4：提交前先同步 develop
 
 ```bash
-git checkout develop
+git switch develop
 git pull origin develop
-git checkout feature/login
+git switch feature/login
 git rebase develop
 ```
 
